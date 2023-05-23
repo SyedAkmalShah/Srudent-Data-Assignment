@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>student registration</title>
+    <style>
+
+.main{
+  background-color: aqua;
+  padding: 20px;
+  width: fit-content;
+}
+.msg-user{
+  color: red;
+}
+
+label {
+  font-weight: bold;
+}
+
+input[type="text"],
+select {
+  padding: 5px;
+  border-radius: 4px;
+  border: 1px solid rgb(247, 238, 238);
+  margin-bottom: 10px;
+  width: 300px;
+  margin-right: 10px;
+}
+
+input[type="radio"] {
+  margin-left: 20px;
+}
+
+button {
+  background-color: blue;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  width: 100px;
+}
+
+button:hover {
+  background-color: rgb(153, 153, 239);
+}
+
+
+    </style>
+</head>
+
+<body>
+    
+  <div class="main">
+    <label for="student-name">Student Name:</label>
+        <input type="text" placeholder="Write first and last Name" id="student-name" name="student-name" required> <br>
+      
+        <label for="father-name">Father's Name:</label>
+        <input type="text" placeholder="Write Father's Name" id="father-name" name="father-name" required> <br>
+      
+        <label for="roll-number">Roll Number:</label>
+        <input type="text" placeholder="Write your roll-number" id="roll-number" name="roll-number" required> <br>
+      
+        <label>Class Time:</label>
+        <label>
+        <input type="radio" class="class-time" name="time" value="weekdays">
+        Weekdays</label>
+        <label>
+        <input type="radio" class="class-time" name="time" value="weekend">
+        Weekend</label> <br>
+      
+        <label for="subject">Subject:</label>
+        <select id="subject"  name="subject" required>
+          <option value="" hidden>Select a subject</option>
+          <option value="web-and-mobile-app">Web and Mobile App</option>
+          <option value="ai-and-chatbot">AI and Chatbot</option>
+          <option value="data-science">Data Science</option>
+          <option value="Trading">Trading</option>
+        </select> <br>
+      
+        <button onclick="formSubmit()">SUBMIT</button>
+  </div>
+
+        <br>
+        <br>
+     
+    <p class="msg-user">
+
+    </p>
+        
+    <div id="students-data">
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
