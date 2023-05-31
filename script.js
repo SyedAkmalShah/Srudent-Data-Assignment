@@ -55,7 +55,7 @@ function printStudentData(studentInfo) {
 }
 
 function printWithBacktick(studentInfo) {
-  var data = "<div id='data-" + allStudentsData.length + "' style='border: 1px solid black; margin: 15px; padding: 15px;'> " +
+  var data = "<div id='data-" + allStudentsData.length + "' style='border: 5px solid black; margin: 20px; padding: 10px;'> " +
     "<div>" + studentInfo.stName + "</div>" +
     "<div>" + studentInfo.fName + "</div>" +
     "<div>" + studentInfo.rollNum + "</div>" +
